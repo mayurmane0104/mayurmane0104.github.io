@@ -302,12 +302,36 @@ footer {
     Let’s talk.
   </p>
 
-  <form action="https://formspree.io/f/xbdlkenv" method="POST">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea rows="4" placeholder="Your Message"></textarea>
-    <button type="submit">Send Message</button>
+  <form
+    action="https://formspree.io/f/xbdlkenv"
+    method="POST"
+  >
+    <input
+      type="text"
+      name="name"
+      placeholder="Your Name"
+      required
+    >
+
+    <input
+      type="email"
+      name="email"
+      placeholder="Your Email"
+      required
+    >
+
+    <textarea
+      name="message"
+      rows="4"
+      placeholder="Your Message"
+      required
+    ></textarea>
+
+    <button type="submit">
+      Send Message
+    </button>
   </form>
+
 
   <p style="margin-top:20px;">
     <a href="mailto:mayurmanerajendra@gmail.com">Email</a> •
