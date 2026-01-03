@@ -6,292 +6,319 @@
 
 <title>Mayur Rajendra Mane | Python Django Developer & Team Lead</title>
 
-<meta name="description" content="Experienced Python & Django Developer, DevOps Engineer and Team Lead. Specialised in backend systems, CI/CD, cloud deployments, IoT and ERP integrations.">
+<!-- SEO -->
+<meta name="description" content="Experienced Python & Django Developer, DevOps Engineer and Team Lead. Specializing in backend systems, CI/CD, cloud deployments, IoT and ERP integrations.">
 <meta name="keywords" content="Python Developer, Django Developer, Backend Engineer, DevOps Engineer, Team Lead, Gunicorn, NGINX, Docker, CI/CD, AWS, Linux">
 
+<!-- OpenGraph -->
+<meta property="og:title" content="Mayur Rajendra Mane | Python Django Developer">
+<meta property="og:description" content="Backend Developer & Team Lead with real production experience.">
+<meta property="og:type" content="website">
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
 <style>
 :root {
-  --bg: #020617;
-  --card: #0f172a;
-  --text: #e5e7eb;
-  --muted: #94a3b8;
-  --primary: #38bdf8;
-  --accent: #22d3ee;
-  --border: #1e293b;
+  --bg:#020617;
+  --card:#0f172a;
+  --text:#e5e7eb;
+  --muted:#94a3b8;
+  --primary:#38bdf8;
+  --accent:#22d3ee;
+  --border:#1e293b;
 }
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif;
+  scroll-behavior:smooth;
 }
-
 body {
-  background: radial-gradient(1200px 600px at 10% -10%, #0f172a, transparent),
-              radial-gradient(800px 400px at 90% 10%, #020617, transparent),
-              var(--bg);
-  color: var(--text);
-  line-height: 1.7;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
 }
+a { color:var(--primary); text-decoration:none; }
 
-a { color: var(--primary); text-decoration: none; }
-
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 60px 20px;
-}
-
-/* ---------- HEADER ---------- */
-header {
-  text-align: center;
-  margin-bottom: 80px;
-}
-
-header h1 {
-  font-size: 44px;
-  font-weight: 800;
-  background: linear-gradient(90deg, #38bdf8, #22d3ee);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-header p {
-  margin-top: 12px;
-  font-size: 18px;
-  color: var(--muted);
-}
-
-.btns {
-  margin-top: 30px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 14px 22px;
-  margin: 8px;
-  border-radius: 10px;
-  font-weight: 600;
-  transition: all 0.25s ease;
-}
-
-.btn.primary {
-  background: linear-gradient(135deg, #38bdf8, #22d3ee);
-  color: #000;
-  box-shadow: 0 10px 30px rgba(56,189,248,0.25);
-}
-
-.btn.secondary {
-  border: 1px solid var(--border);
-  color: var(--primary);
-}
-
-.btn:hover {
-  transform: translateY(-3px);
-}
-
-/* ---------- SECTIONS ---------- */
 section {
-  margin-bottom: 90px;
+  max-width:1100px;
+  margin:auto;
+  padding:90px 20px;
 }
-
-section h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
+h2 {
+  font-size:32px;
+  margin-bottom:8px;
 }
-
-.section-sub {
-  color: var(--muted);
-  margin-bottom: 30px;
+.sub {
+  color:var(--muted);
+  margin-bottom:36px;
 }
-
-/* ---------- CARDS ---------- */
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:24px;
+}
 .card {
-  background: linear-gradient(180deg, #0f172a, #020617);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 26px;
-  margin-bottom: 22px;
-  transition: all 0.3s ease;
+  background:linear-gradient(180deg,#0f172a,#020617);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px;
+  transition:0.3s ease;
 }
-
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  transform:translateY(-6px);
+  box-shadow:0 20px 40px rgba(0,0,0,0.45);
 }
 
-/* ---------- SKILLS ---------- */
+/* HERO */
+.hero {
+  min-height:100vh;
+  background:
+    linear-gradient(rgba(2,6,23,.88),rgba(2,6,23,.96)),
+    url("https://images.unsplash.com/photo-1526378722484-bd91ca387e72?auto=format&fit=crop&w=1600&q=80")
+    center/cover;
+  display:flex;
+  align-items:center;
+  text-align:center;
+}
+.hero h1 {
+  font-size:48px;
+  font-weight:800;
+  background:linear-gradient(90deg,#38bdf8,#22d3ee);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.hero p {
+  margin-top:14px;
+  font-size:20px;
+  color:var(--muted);
+}
+.btns { margin-top:30px; }
+.btn {
+  display:inline-block;
+  padding:14px 26px;
+  margin:8px;
+  border-radius:14px;
+  font-weight:600;
+  transition:.3s;
+}
+.btn.primary {
+  background:linear-gradient(135deg,#38bdf8,#22d3ee);
+  color:#000;
+}
+.btn.secondary {
+  border:1px solid var(--border);
+  color:var(--primary);
+}
+.btn:hover { transform:translateY(-4px); }
+
+/* SKILLS */
 .skills span {
-  display: inline-block;
-  padding: 10px 14px;
-  margin: 6px;
-  border-radius: 999px;
-  font-size: 14px;
-  background: #020617;
-  border: 1px solid var(--border);
+  display:inline-block;
+  padding:10px 16px;
+  margin:6px;
+  border-radius:999px;
+  font-size:14px;
+  background:#020617;
+  border:1px solid var(--border);
 }
 
-/* ---------- EXPERIENCE ---------- */
-.exp-role {
-  font-size: 18px;
-  font-weight: 600;
+/* CONTACT FORM */
+form input, form textarea {
+  width:100%;
+  padding:14px;
+  margin-bottom:16px;
+  background:#020617;
+  border:1px solid var(--border);
+  color:var(--text);
+  border-radius:8px;
+}
+form button {
+  width:100%;
+  padding:14px;
+  background:linear-gradient(135deg,#38bdf8,#22d3ee);
+  border:none;
+  border-radius:12px;
+  font-weight:600;
+  cursor:pointer;
 }
 
-.exp-meta {
-  color: var(--muted);
-  font-size: 14px;
-  margin-bottom: 12px;
-}
-
-ul {
-  margin-left: 18px;
-}
-
-li {
-  margin-bottom: 8px;
-}
-
-/* ---------- FOOTER ---------- */
 footer {
-  text-align: center;
-  color: var(--muted);
-  font-size: 14px;
-  margin-top: 80px;
-}
-
-@media (max-width: 768px) {
-  header h1 { font-size: 34px; }
+  text-align:center;
+  padding:40px;
+  color:var(--muted);
+  font-size:14px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
-
 <!-- HERO -->
-<header>
-  <h1>Mayur Rajendra Mane</h1>
-  <p>Python / Django Developer • DevOps Engineer • Team Lead</p>
-
-  <div class="btns">
-    <a class="btn primary" href="assets/resume.pdf" target="_blank">Download Resume</a>
-    <a class="btn secondary" href="#contact">Contact Me</a>
+<section class="hero">
+  <div style="margin:auto;">
+    <h1>Mayur Rajendra Mane</h1>
+    <p>Building scalable backend systems that run reliably in production</p>
+    <div class="btns">
+      <a class="btn primary" href="#contact">Hire Me</a>
+      <a class="btn secondary" href="assets/resume.pdf">Download Resume</a>
+    </div>
   </div>
-</header>
+</section>
 
 <!-- ABOUT -->
 <section>
   <h2>About Me</h2>
-  <p class="section-sub">Backend engineer with real-world production experience</p>
-
+  <p class="sub">Backend engineer with leadership & production experience</p>
   <div class="card">
-    <p>
-      Python/Django Developer with <strong>2+ years of hands-on experience</strong>
-      building backend systems, REST APIs, and cloud-deployed applications.
-      Currently working as a <strong>Software Team Lead</strong>, delivering
-      scalable, high-availability systems for international clients across
-      IoT, ERP, and compliance-driven platforms.
-    </p>
+    Python/Django Developer with 2+ years of hands-on experience building
+    backend systems, REST APIs, and cloud-deployed applications.
+    Currently working as a Software Team Lead delivering high-availability,
+    scalable systems for international clients across IoT, ERP, and
+    compliance-driven platforms.
+  </div>
+</section>
+
+<!-- CAREER SNAPSHOT -->
+<section>
+  <h2>Career Snapshot</h2>
+  <p class="sub">Quick professional overview</p>
+  <div class="card">
+    <ul>
+      <li>2+ years of professional backend development experience</li>
+      <li>Promoted to Team Lead within 3 months</li>
+      <li>Hands-on with production deployments & DevOps</li>
+      <li>International client delivery (Oceania region)</li>
+      <li>Strong focus on reliability, scalability & maintainability</li>
+    </ul>
   </div>
 </section>
 
 <!-- SKILLS -->
 <section>
   <h2>Technical Expertise</h2>
-  <p class="section-sub">Technologies I work with in production</p>
-
+  <p class="sub">Technologies used in real production systems</p>
   <div class="skills">
-    <span>Python</span>
-    <span>Django</span>
-    <span>Django REST Framework</span>
-    <span>Gunicorn</span>
-    <span>NGINX</span>
-    <span>Docker</span>
-    <span>Linux</span>
-    <span>AWS EC2</span>
-    <span>CI/CD</span>
-    <span>Jenkins</span>
-    <span>Ansible</span>
-    <span>Terraform</span>
-    <span>Prometheus</span>
-    <span>Grafana</span>
-    <span>MQTT</span>
-    <span>Azure IoT</span>
-    <span>PostgreSQL</span>
+    <span>Python</span><span>Django</span><span>Django REST Framework</span>
+    <span>Gunicorn</span><span>NGINX</span><span>Docker</span><span>Linux</span>
+    <span>AWS EC2</span><span>CI/CD</span><span>Jenkins</span><span>Ansible</span>
+    <span>Terraform</span><span>Prometheus</span><span>Grafana</span>
+    <span>MQTT</span><span>Azure IoT</span><span>PostgreSQL</span>
     <span>Power BI</span>
   </div>
 </section>
 
-<!-- EXPERIENCE -->
+<!-- WHAT I BRING -->
 <section>
-  <h2>Professional Experience</h2>
-  <p class="section-sub">Leadership & delivery in production environments</p>
+  <h2>What I Bring to a Team</h2>
+  <p class="sub">Beyond writing code</p>
+  <div class="grid">
+    <div class="card"><h3>Ownership</h3>From requirement analysis to deployment and post-production support.</div>
+    <div class="card"><h3>Production Thinking</h3>Systems designed with monitoring, logging and failure handling.</div>
+    <div class="card"><h3>Leadership</h3>Experience guiding developers, reviewing code and coordinating releases.</div>
+  </div>
+</section>
+
+<!-- PROJECT CASE STUDIES -->
+<section>
+  <h2>Project Case Studies</h2>
+  <p class="sub">Problems solved in production</p>
 
   <div class="card">
-    <div class="exp-role">Software Application Engineer / Team Lead</div>
-    <div class="exp-meta">Truecue iEngineering Australia Pvt Ltd • Jan 2024 – Present</div>
+    <h3>IoT Management Platform</h3>
     <ul>
-      <li>Promoted to Team Lead within 3 months based on delivery speed and ownership.</li>
-      <li>Led backend development for 4 international clients across Oceania.</li>
-      <li>Designed and maintained Django REST APIs for IoT and ERP integrations.</li>
-      <li>Deployed and operated production systems using Docker, Gunicorn, and NGINX.</li>
-      <li>Implemented CI/CD pipelines, monitoring, and server automation.</li>
+      <li>Django REST APIs for sensor data ingestion</li>
+      <li>MQTT based background processing</li>
+      <li>Dockerized deployments with CI/CD</li>
+      <li>Monitoring with Prometheus & Grafana</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>ERP Integration (CARL + SAP / QAD)</h3>
+    <ul>
+      <li>Secure REST API middleware</li>
+      <li>OAuth authentication</li>
+      <li>NGINX reverse proxy with rate limiting</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Automated CI/CD & Server Operations</h3>
+    <ul>
+      <li>Jenkins pipelines</li>
+      <li>Zero-downtime Gunicorn restarts</li>
+      <li>Linux server hardening & monitoring</li>
     </ul>
   </div>
 </section>
 
-<!-- PROJECTS -->
+<!-- ENGINEERING PHILOSOPHY -->
 <section>
-  <h2>Key Projects</h2>
-  <p class="section-sub">Real systems shipped to production</p>
-
+  <h2>Engineering Philosophy</h2>
+  <p class="sub">How I approach building software</p>
   <div class="card">
-    <h3>IoT Management Platform</h3>
-    <p>
-      Backend platform for ingesting and processing sensor data using Django,
-      MQTT, and PostgreSQL. Deployed with Docker, CI/CD pipelines, and
-      production monitoring.
-    </p>
+    <ul>
+      <li>Readable and maintainable code over shortcuts</li>
+      <li>Design APIs for future change</li>
+      <li>Automate everything repetitive</li>
+      <li>Observability from day one</li>
+    </ul>
   </div>
+</section>
 
+<!-- TOOLS -->
+<section>
+  <h2>Tools & Work Environment</h2>
+  <p class="sub">Daily production setup</p>
   <div class="card">
-    <h3>ERP Integration (CARL + SAP/QAD)</h3>
-    <p>
-      Middleware services built with Django REST Framework for secure ERP
-      integrations using OAuth, background workers, and NGINX reverse proxy.
-    </p>
+    Linux environments, Dockerized services, Git-driven workflows,
+    CI/CD pipelines, NGINX + Gunicorn, Prometheus, Grafana,
+    Bash scripting and live server troubleshooting.
   </div>
+</section>
 
+<!-- AVAILABILITY -->
+<section>
+  <h2>Availability</h2>
+  <p class="sub">Current work preference</p>
   <div class="card">
-    <h3>Automated CI/CD Pipeline</h3>
-    <p>
-      Jenkins-driven pipelines for automated testing, Docker image builds,
-      and zero-downtime deployments using Ansible.
-    </p>
+    <ul>
+      <li>Open to Backend / Python / Django / DevOps roles</li>
+      <li>Remote or on-site</li>
+      <li>Open to relocation</li>
+      <li>Immediate to short notice</li>
+    </ul>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
   <h2>Contact</h2>
-  <p class="section-sub">Open to backend & DevOps opportunities</p>
+  <p class="sub">
+    Looking for a backend engineer who understands production and ownership?
+    Let’s talk.
+  </p>
 
-  <div class="card">
-    <p>Email: <a href="mailto:mayurmanerajendra@gmail.com">mayurmanerajendra@gmail.com</a></p>
-    <p>Phone: +91 8766971289</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/mayur-mane-9b4838198" target="_blank">linkedin.com/in/mayur-mane-9b4838198</a></p>
-  </div>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="4" placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <p style="margin-top:20px;">
+    <a href="mailto:mayurmanerajendra@gmail.com">Email</a> •
+    <a href="https://linkedin.com/in/mayur-mane-9b4838198">LinkedIn</a>
+  </p>
 </section>
 
 <footer>
   © 2026 Mayur Rajendra Mane • Backend • DevOps • Leadership
 </footer>
 
-</div>
 </body>
 </html>
 
