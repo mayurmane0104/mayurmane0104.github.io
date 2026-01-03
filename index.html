@@ -1,249 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mayur Rajendra Mane | Python Django Developer</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <!-- SEO / ATS -->
-  <meta name="description" content="Python Django Developer & Team Lead with experience in backend development, DevOps, CI/CD, cloud deployments, IoT and ERP integrations.">
-  <meta name="keywords" content="Python Developer, Django Developer, Backend Engineer, DevOps Engineer, Gunicorn, NGINX, Docker, CI/CD, AWS, Linux">
+<title>Mayur Rajendra Mane | Python Django Developer & Team Lead</title>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="description" content="Experienced Python & Django Developer, DevOps Engineer and Team Lead. Specialised in backend systems, CI/CD, cloud deployments, IoT and ERP integrations.">
+<meta name="keywords" content="Python Developer, Django Developer, Backend Engineer, DevOps Engineer, Team Lead, Gunicorn, NGINX, Docker, CI/CD, AWS, Linux">
 
-  <style>
-    :root {
-      --bg: #0f172a;
-      --card: #111827;
-      --text: #e5e7eb;
-      --muted: #9ca3af;
-      --primary: #38bdf8;
-      --border: #1f2937;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
+<style>
+:root {
+  --bg: #020617;
+  --card: #0f172a;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --primary: #38bdf8;
+  --accent: #22d3ee;
+  --border: #1e293b;
+}
 
-    body {
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
 
-    a {
-      color: var(--primary);
-      text-decoration: none;
-    }
+body {
+  background: radial-gradient(1200px 600px at 10% -10%, #0f172a, transparent),
+              radial-gradient(800px 400px at 90% 10%, #020617, transparent),
+              var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
 
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 40px 20px;
-    }
+a { color: var(--primary); text-decoration: none; }
 
-    header {
-      text-align: center;
-      margin-bottom: 60px;
-    }
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+}
 
-    header h1 {
-      font-size: 42px;
-      font-weight: 700;
-    }
+/* ---------- HEADER ---------- */
+header {
+  text-align: center;
+  margin-bottom: 80px;
+}
 
-    header p {
-      color: var(--muted);
-      margin-top: 10px;
-      font-size: 18px;
-    }
+header h1 {
+  font-size: 44px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #38bdf8, #22d3ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-    .btns {
-      margin-top: 25px;
-    }
+header p {
+  margin-top: 12px;
+  font-size: 18px;
+  color: var(--muted);
+}
 
-    .btn {
-      display: inline-block;
-      padding: 12px 20px;
-      margin: 8px;
-      border-radius: 6px;
-      background: var(--primary);
-      color: #000;
-      font-weight: 600;
-      transition: transform 0.2s;
-    }
+.btns {
+  margin-top: 30px;
+}
 
-    .btn.secondary {
-      background: transparent;
-      color: var(--primary);
-      border: 1px solid var(--primary);
-    }
+.btn {
+  display: inline-block;
+  padding: 14px 22px;
+  margin: 8px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
 
-    .btn:hover {
-      transform: translateY(-2px);
-    }
+.btn.primary {
+  background: linear-gradient(135deg, #38bdf8, #22d3ee);
+  color: #000;
+  box-shadow: 0 10px 30px rgba(56,189,248,0.25);
+}
 
-    section {
-      margin-bottom: 60px;
-    }
+.btn.secondary {
+  border: 1px solid var(--border);
+  color: var(--primary);
+}
 
-    section h2 {
-      font-size: 26px;
-      margin-bottom: 20px;
-      border-bottom: 2px solid var(--border);
-      padding-bottom: 8px;
-    }
+.btn:hover {
+  transform: translateY(-3px);
+}
 
-    .card {
-      background: var(--card);
-      padding: 20px;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-      margin-bottom: 20px;
-      transition: transform 0.3s;
-    }
+/* ---------- SECTIONS ---------- */
+section {
+  margin-bottom: 90px;
+}
 
-    .card:hover {
-      transform: translateY(-4px);
-    }
+section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
 
-    .skills span {
-      display: inline-block;
-      background: #020617;
-      border: 1px solid var(--border);
-      padding: 8px 12px;
-      border-radius: 6px;
-      margin: 6px;
-      font-size: 14px;
-    }
+.section-sub {
+  color: var(--muted);
+  margin-bottom: 30px;
+}
 
-    footer {
-      text-align: center;
-      color: var(--muted);
-      font-size: 14px;
-      margin-top: 60px;
-    }
+/* ---------- CARDS ---------- */
+.card {
+  background: linear-gradient(180deg, #0f172a, #020617);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 26px;
+  margin-bottom: 22px;
+  transition: all 0.3s ease;
+}
 
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 32px;
-      }
-    }
-  </style>
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* ---------- SKILLS ---------- */
+.skills span {
+  display: inline-block;
+  padding: 10px 14px;
+  margin: 6px;
+  border-radius: 999px;
+  font-size: 14px;
+  background: #020617;
+  border: 1px solid var(--border);
+}
+
+/* ---------- EXPERIENCE ---------- */
+.exp-role {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.exp-meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+ul {
+  margin-left: 18px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+  header h1 { font-size: 34px; }
+}
+</style>
 </head>
 
 <body>
 
-  <div class="container">
+<div class="container">
 
-    <!-- HERO -->
-    <header>
-      <h1>Mayur Rajendra Mane</h1>
-      <p>Python / Django Developer • DevOps Engineer • Team Lead</p>
+<!-- HERO -->
+<header>
+  <h1>Mayur Rajendra Mane</h1>
+  <p>Python / Django Developer • DevOps Engineer • Team Lead</p>
 
-      <div class="btns">
-        <a class="btn" href="assets/resume.pdf" target="_blank">Download Resume</a>
-        <a class="btn secondary" href="#contact">Contact Me</a>
-      </div>
-    </header>
+  <div class="btns">
+    <a class="btn primary" href="assets/resume.pdf" target="_blank">Download Resume</a>
+    <a class="btn secondary" href="#contact">Contact Me</a>
+  </div>
+</header>
 
-    <!-- ABOUT -->
-    <section>
-      <h2>About Me</h2>
-      <div class="card">
-        <p>
-          Python/Django Developer with 2 years of experience in backend development,
-          REST API engineering, cloud deployments, and DevOps automation.
-          Currently working as a Software Team Lead delivering scalable,
-          high-availability production systems for international clients.
-        </p>
-      </div>
-    </section>
+<!-- ABOUT -->
+<section>
+  <h2>About Me</h2>
+  <p class="section-sub">Backend engineer with real-world production experience</p>
 
-    <!-- SKILLS -->
-    <section>
-      <h2>Technical Skills</h2>
-      <div class="skills">
-        <span>Python</span>
-        <span>Django</span>
-        <span>Django REST Framework</span>
-        <span>Gunicorn</span>
-        <span>NGINX</span>
-        <span>Docker</span>
-        <span>Linux</span>
-        <span>AWS EC2</span>
-        <span>CI/CD</span>
-        <span>Jenkins</span>
-        <span>Ansible</span>
-        <span>Terraform</span>
-        <span>Prometheus</span>
-        <span>Grafana</span>
-        <span>MQTT</span>
-        <span>Azure IoT</span>
-        <span>PostgreSQL</span>
-        <span>Power BI</span>
-      </div>
-    </section>
+  <div class="card">
+    <p>
+      Python/Django Developer with <strong>2+ years of hands-on experience</strong>
+      building backend systems, REST APIs, and cloud-deployed applications.
+      Currently working as a <strong>Software Team Lead</strong>, delivering
+      scalable, high-availability systems for international clients across
+      IoT, ERP, and compliance-driven platforms.
+    </p>
+  </div>
+</section>
 
-    <!-- EXPERIENCE -->
-    <section>
-      <h2>Experience</h2>
+<!-- SKILLS -->
+<section>
+  <h2>Technical Expertise</h2>
+  <p class="section-sub">Technologies I work with in production</p>
 
-      <div class="card">
-        <h3>Truecue iEngineering Australia Pvt Ltd</h3>
-        <p><strong>Software Application Engineer / Team Lead</strong> (Jan 2024 – Present)</p>
-        <ul>
-          <li>Promoted to Team Lead within 3 months.</li>
-          <li>Delivered backend systems for 4 international clients.</li>
-          <li>Built Django REST APIs for IoT and ERP integrations.</li>
-          <li>Deployed production systems using Docker, Gunicorn & NGINX.</li>
-          <li>Implemented CI/CD pipelines and server automation.</li>
-        </ul>
-      </div>
+  <div class="skills">
+    <span>Python</span>
+    <span>Django</span>
+    <span>Django REST Framework</span>
+    <span>Gunicorn</span>
+    <span>NGINX</span>
+    <span>Docker</span>
+    <span>Linux</span>
+    <span>AWS EC2</span>
+    <span>CI/CD</span>
+    <span>Jenkins</span>
+    <span>Ansible</span>
+    <span>Terraform</span>
+    <span>Prometheus</span>
+    <span>Grafana</span>
+    <span>MQTT</span>
+    <span>Azure IoT</span>
+    <span>PostgreSQL</span>
+    <span>Power BI</span>
+  </div>
+</section>
 
-    </section>
+<!-- EXPERIENCE -->
+<section>
+  <h2>Professional Experience</h2>
+  <p class="section-sub">Leadership & delivery in production environments</p>
 
-    <!-- PROJECTS -->
-    <section>
-      <h2>Projects</h2>
+  <div class="card">
+    <div class="exp-role">Software Application Engineer / Team Lead</div>
+    <div class="exp-meta">Truecue iEngineering Australia Pvt Ltd • Jan 2024 – Present</div>
+    <ul>
+      <li>Promoted to Team Lead within 3 months based on delivery speed and ownership.</li>
+      <li>Led backend development for 4 international clients across Oceania.</li>
+      <li>Designed and maintained Django REST APIs for IoT and ERP integrations.</li>
+      <li>Deployed and operated production systems using Docker, Gunicorn, and NGINX.</li>
+      <li>Implemented CI/CD pipelines, monitoring, and server automation.</li>
+    </ul>
+  </div>
+</section>
 
-      <div class="card">
-        <h3>IoT Management Platform</h3>
-        <p>Django backend, MQTT ingestion, Dockerized deployment, CI/CD automation, production monitoring.</p>
-      </div>
+<!-- PROJECTS -->
+<section>
+  <h2>Key Projects</h2>
+  <p class="section-sub">Real systems shipped to production</p>
 
-      <div class="card">
-        <h3>ERP Integration (CARL + SAP/QAD)</h3>
-        <p>REST API middleware, OAuth authentication, background workers, secure NGINX reverse proxy.</p>
-      </div>
-
-      <div class="card">
-        <h3>Automated CI/CD Pipeline</h3>
-        <p>Jenkins pipelines, Docker builds, Ansible-based zero-downtime deployments.</p>
-      </div>
-
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <div class="card">
-        <p>Email: <a href="mailto:mayurmanerajendra@gmail.com">mayurmanerajendra@gmail.com</a></p>
-        <p>Phone: +91 8766971289</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/mayur-mane-9b4838198" target="_blank">linkedin.com/in/mayur-mane-9b4838198</a></p>
-      </div>
-    </section>
-
-    <footer>
-      © 2026 Mayur Rajendra Mane • Built with HTML & CSS • Hosted on GitHub Pages
-    </footer>
-
+  <div class="card">
+    <h3>IoT Management Platform</h3>
+    <p>
+      Backend platform for ingesting and processing sensor data using Django,
+      MQTT, and PostgreSQL. Deployed with Docker, CI/CD pipelines, and
+      production monitoring.
+    </p>
   </div>
 
+  <div class="card">
+    <h3>ERP Integration (CARL + SAP/QAD)</h3>
+    <p>
+      Middleware services built with Django REST Framework for secure ERP
+      integrations using OAuth, background workers, and NGINX reverse proxy.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Automated CI/CD Pipeline</h3>
+    <p>
+      Jenkins-driven pipelines for automated testing, Docker image builds,
+      and zero-downtime deployments using Ansible.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p class="section-sub">Open to backend & DevOps opportunities</p>
+
+  <div class="card">
+    <p>Email: <a href="mailto:mayurmanerajendra@gmail.com">mayurmanerajendra@gmail.com</a></p>
+    <p>Phone: +91 8766971289</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/mayur-mane-9b4838198" target="_blank">linkedin.com/in/mayur-mane-9b4838198</a></p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Mayur Rajendra Mane • Backend • DevOps • Leadership
+</footer>
+
+</div>
 </body>
 </html>
 
